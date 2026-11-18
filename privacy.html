@@ -10,7 +10,7 @@
 <body>
 <main>
   <h1>Privacy policy</h1>
-  <p class="muted">VCHN, the production tool of the VICE CITY HOOD NEWS channel. Last updated: 18 November 2026.</p>
+  <p class="muted">VCHN, the production tool of the VICE CITY HOOD NEWS channel. Last updated: 18 November 2026 (public video statistics and own-video statistics added).</p>
 
   <h2>Who uses the app</h2>
   <p>VCHN is a private tool. Only the people who run VICE CITY HOOD NEWS use it, and only with the YouTube channel
@@ -21,16 +21,25 @@
   <ul>
     <li>the list of videos uploaded to our own channel, with their titles, upload dates, length and processing status
       (scope <code>youtube.readonly</code>),</li>
-    <li>the ability to upload videos to our own channel (scope <code>youtube.upload</code>).</li>
+    <li>the ability to upload videos to our own channel (scope <code>youtube.upload</code>),</li>
+    <li>public view, like and comment counts of our own published shorts.</li>
   </ul>
-  <p>VCHN does not access any other user’s data, comments, subscribers, or personal information.</p>
+  <p>VCHN also reads <strong>public</strong> data that needs no permission: a search for public videos about the
+    game “GTA 6” (video id, title, channel name, publish date) and their public view, like and comment counts.</p>
+  <p>VCHN does not access any other user’s private data, comments, subscribers, or personal information, and never
+    logs in to anyone else’s account.</p>
 
   <h2>How the data is used</h2>
   <ul>
     <li>Our own private gameplay uploads are downloaded to our computer, cut into short scenes and sorted (driving,
       cutscene, scenery, …) so we can use them as background footage in our shorts. The downloaded file is deleted
       after this; only an index of scenes with timestamps is kept.</li>
-    <li>Finished shorts are uploaded to our own channel.</li>
+    <li>Finished shorts are uploaded to our own channel. Each upload is marked as altered or synthetic content, because
+      the voice is AI-generated.</li>
+    <li>The public statistics of other videos are used only to measure how much interest a news topic has right now
+      (a “hype score” that helps us decide which topic to cover). They are combined into a number per topic; nothing
+      about the other videos or their creators is shown, published or shared.</li>
+    <li>The statistics of our own shorts show us which of our videos work, to improve the next ones.</li>
   </ul>
 
   <h2>Storage, sharing and retention</h2>
@@ -38,7 +47,9 @@
     <li>Everything is stored locally on our own computer: the OAuth token, the video index and the produced shorts.
       Nothing is stored on a server of ours, and there is no user account system.</li>
     <li>We do not sell, share, or transfer this data to anyone, and do not use it for advertising.</li>
-    <li>Data is kept as long as the channel uses the tool and is deleted when we stop using it.</li>
+    <li>Data about other creators’ public videos is deleted automatically after at most 30 days (a daily cleanup;
+      backups are kept 14 days), as the YouTube API Services Developer Policies require.</li>
+    <li>Data about our own channel is kept as long as the channel uses the tool and is deleted when we stop using it.</li>
   </ul>
 
   <h2>Revoking access</h2>
